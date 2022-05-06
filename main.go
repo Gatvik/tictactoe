@@ -8,6 +8,7 @@ import (
 
 func main() {
 	var field = createField()
+	rand.Seed(time.Now().UnixNano())
 	var turn int = rand.Intn(2)
 	for {
 		displayField(field)
