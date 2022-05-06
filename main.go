@@ -13,7 +13,7 @@ func main() {
 		displayField(field)
 		makeTurn(&turn, &field)
 		if winner := isGameEnd(field); winner != -1 {
-			fmt.Printf("Player %d wins! Thanks for playing!\n", winner)
+			fmt.Printf("Player %d wins! Thanks for playing!\n", winner+1)
 			time.Sleep(5 * time.Second)
 			break
 		}
